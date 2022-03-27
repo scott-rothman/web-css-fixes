@@ -1,0 +1,63 @@
+/***********************
+******* GO Media *******
+***********************/
+
+/* Hide video dropdown */
+
+.instream-native-video--frontpage {
+    display: none !important;
+}
+
+/* Hide various ads */
+
+html body div.ad-container {
+    display: none !important;
+}
+
+.js_desktop-horizontal-ad {
+    display: none !important;
+}
+
+html body .bxc.bx-base {
+    display: none !important;
+}
+
+#taboola-below-homepage-feed {
+    display: none !important;
+}
+
+/*****************************
+******* Paramount Plus *******
+*****************************/
+
+/* Hide video sidebar overlay */
+
+.skin-sidebar-plugin {
+    display: none !important;
+}
+
+/**********************
+******* Twitter *******
+**********************/
+
+/* Hide promoted tweets and trends, may kill video embeds */
+
+*[data-testid="placementTracking"],
+*[data-testid="trend"] {
+    display: none;
+}
+/* Fixes video embeds from above fix */
+*[data-testid="tweet"] *[data-testid="placementTracking"] {
+    display: block;
+}
+
+
+/* Hide 'Who To Follow' in Sidebar */
+
+*[aria-label="Who to follow"] {
+    display: none !important;
+}
+
+.r-1bro5k0 {
+    min-height: 0;
+}

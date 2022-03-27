@@ -1,3 +1,14 @@
+/******************
+***** Global ******
+******************/
+
+/* Ensures all text is selectable */
+
+html,
+html * {
+    user-select: text !important;
+}
+
 /***********************
 ******* GO Media *******
 ***********************/

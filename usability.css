@@ -1,12 +1,21 @@
 /******************
-***** Global ******
+****** GLOBALS ****
 ******************/
 
-/* Ensures all text is selectable */
+/* Prevent CSS from blocking page scroll*/
 
-html,
-html * {
-    user-select: text !important;
+html {
+    overflow-y: scroll !important;
+}
+
+body {
+    position: relative;
+}
+
+#registration-wall {
+    display: none !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
 }
 
 /***********************
@@ -35,6 +44,54 @@ html body .bxc.bx-base {
 
 #taboola-below-homepage-feed {
     display: none !important;
+}
+
+body #ias_trackable {
+    display: none !important;
+}
+
+.jpstage {
+    display: none !important;
+}
+
+.js_slideshow-full-width-ad {
+    display: none !important;
+}
+
+/* Hide embedded video player in news feeds */
+.video-html5-playlist {
+    display: none !important;
+}
+
+.left-top-ad {
+    display: none !important;
+}
+
+#commerce-inset-wrapper {
+    display: none !important;
+}
+
+.eqbLZs {
+    padding-bottom: initial !important;
+}
+
+.mgidBottomDesktop {
+    display: none !important;
+}
+
+#M674724ScriptRootC1321071_1277b,
+.mgbox {
+    display: none !important;
+}
+
+body .mgbox {
+    display: none !important;
+    visibility: hidden;
+}
+
+.smcx-widget {
+    display: none;
+    visibility: hidden;
 }
 
 /*****************************
@@ -71,4 +128,35 @@ html body .bxc.bx-base {
 
 .r-1bro5k0 {
     min-height: 0;
+}
+
+.css-1dbjc4n.r-1awozwy.r-1kihuf0.r-18u37iz.r-1pi2tsx.r-1777fci.r-1pjcn9w.r-xr3zp9.r-1xcajam.r-ipm5af.r-g6jmlv {
+    display: none !important;
+}
+
+/**********************
+******* Twitch ********
+**********************/
+
+/* Hide text in title overlay */
+
+.stream-info-card {
+    opacity: 0 !important;
+}
+
+.sl-button-wrapper {
+    display: none !important;
+}
+
+.ad-link,
+.stream-display-ad__container,
+.stream-display-ad__wrapper {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Tumblr */
+
+article:has(.n_1Sv) {
+    display: none !important;
 }

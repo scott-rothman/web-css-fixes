@@ -16,3 +16,8 @@ A collection of CSS rules to improve various sites usability across the web for 
 - GO Media Sites ([Kotaku](https://kotaku.com/), [Gizmodo](https://gizmoto.com/), etc)
   - Hides various ads and promoted stories and articles
   - Hides video dropdown that displays on scroll 
+  - Hides various promoted news articles
+- Twitch
+  - Hides some video overlay content
+- Tumblr
+  - First attempt at hiding promoted posts

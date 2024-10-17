@@ -2,6 +2,8 @@
 A collection of CSS rules to improve various sites usability across the web for use with Stylus or any custom CSS injector.  Since the file contains fixes for multiple sites, recommended use is to set up as global styles.  There are comments designating each site and specific rule functionality for customization and separation as well if needed.
 
 ## Stylus
+Personally, I use stylus but any addon/plugin/whathaveyou that can inject CSS will provide you the functionality that you need.
+
 - [Plugin Page](https://add0n.com/stylus.html)
 - [Chrome Plugin](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 - [Firefox Plugin](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)

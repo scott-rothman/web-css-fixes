@@ -12,10 +12,80 @@ body {
     position: relative;
 }
 
-#registration-wall {
+html body #registration-wall {
     display: none !important;
     pointer-events: none !important;
     opacity: 0 !important;
+}
+
+/* should hide goolge login popups */
+
+#credentials-picker-container {
+    display: none !important;
+}
+
+/**********************************
+************ Twitter **************
+***********************************/
+
+/************** Left Sidebar Fixes **************/
+
+html body a[aria-label="Grok"] {
+    display: none !important;
+}
+
+html body a[aria-label="Jobs"] {
+    display: none !important;
+}
+
+html body a[aria-label="Communities"] {
+    display: none !important;
+}
+
+html body a[aria-label="Premium"] {
+    display: none !important;
+}
+
+html body a[aria-label="Verified Orgs"] {
+    display: none !important;
+}
+
+/************* Right Sidebar Fixes *************/
+
+/* Hide promoted tweets and trends, may kill video embeds... Does kill video embeds, next rule fixes */
+html body *[data-testid="placementTracking"],
+html body *[data-testid="trend"] {
+    display: none;
+}
+
+/* Fixes video embeds from above fix */
+html body *[data-testid="tweet"] *[data-testid="placementTracking"] {
+    display: block;
+}
+
+/* Hide "What's Happening" in Sidebar */
+html body *[aria-label="Timeline: Trending now"] {
+    display: none !important;
+}
+
+/* Hide "Who To Follow" in Sidebar */
+html body *[aria-label="Who to follow"] {
+    display: none !important;
+}
+
+/* Hide "Subscribe to Premium" in Sidebar */
+html body *[aria-label="Subscribe to Premium"] {
+    display: none !important;
+}
+
+/* Removes gray borders around hidden elements above */
+html body *[aria-label="Trending"] .r-1kqtdi0 {
+    border-color: transparent !important;
+}
+
+/* Ensures container doesn't collapse */
+html body .r-1bro5k0 {
+    min-height: 0;
 }
 
 /***********************
@@ -34,11 +104,11 @@ html body div.ad-container {
     display: none !important;
 }
 
-.js_desktop-horizontal-ad {
+html body .bxc.bx-base {
     display: none !important;
 }
 
-html body .bxc.bx-base {
+html body .js_desktop-horizontal-ad {
     display: none !important;
 }
 
@@ -94,6 +164,18 @@ body .mgbox {
     visibility: hidden;
 }
 
+.js_modal_exit_intent {
+    display: none !important;
+}
+
+#splashy-ad-container-top {
+    display: none !important;
+}
+
+.taboola-container {
+    display: none !important;
+}
+
 /*****************************
 ******* Paramount Plus *******
 *****************************/
@@ -101,36 +183,6 @@ body .mgbox {
 /* Hide video sidebar overlay */
 
 .skin-sidebar-plugin {
-    display: none !important;
-}
-
-/**********************
-******* Twitter *******
-**********************/
-
-/* Hide promoted tweets and trends, may kill video embeds */
-
-*[data-testid="placementTracking"],
-*[data-testid="trend"] {
-    display: none;
-}
-/* Fixes video embeds from above fix */
-*[data-testid="tweet"] *[data-testid="placementTracking"] {
-    display: block;
-}
-
-
-/* Hide 'Who To Follow' in Sidebar */
-
-*[aria-label="Who to follow"] {
-    display: none !important;
-}
-
-.r-1bro5k0 {
-    min-height: 0;
-}
-
-.css-1dbjc4n.r-1awozwy.r-1kihuf0.r-18u37iz.r-1pi2tsx.r-1777fci.r-1pjcn9w.r-xr3zp9.r-1xcajam.r-ipm5af.r-g6jmlv {
     display: none !important;
 }
 
@@ -155,8 +207,26 @@ body .mgbox {
     visibility: hidden;
 }
 
-/* Tumblr */
+/**********************
+******* Tumblr ********
+**********************/
 
 article:has(.n_1Sv) {
+    display: none !important;
+}
+
+.nDxxrd, .TZFSLb .zfYLqc {
+    display: none;
+}
+
+*[is-shorts] {
+    display: none !important
+}
+
+.dss-subtitle-renderer-cue {
+    font-family: "Arial", sans-serif !important;
+}
+
+.ad-slot-header, .ad-slot-header__wrapper {
     display: none !important;
 }

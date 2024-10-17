@@ -30,6 +30,8 @@ html body #registration-wall {
 
 /************** Left Sidebar Fixes **************/
 
+
+/* Each rule hides a single menu item with matching label*/
 html body a[aria-label="Grok"] {
     display: none !important;
 }
@@ -81,6 +83,11 @@ html body *[aria-label="Subscribe to Premium"] {
 /* Removes gray borders around hidden elements above */
 html body *[aria-label="Trending"] .r-1kqtdi0 {
     border-color: transparent !important;
+}
+
+/* Hide "Live on X" headline in Sidebar */
+html body *[aria-label="Trending"] h2[role="heading"] {
+    display: none !important;
 }
 
 /* Ensures container doesn't collapse */
